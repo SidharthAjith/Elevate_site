@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Preloader from "../elements/Preloader";
 import HelmetReact from "../elements/HelmetReact";
 import HeaderFive from "../components/HeaderFive";
@@ -22,12 +22,27 @@ import CounterOne from "../components/CounterOne";
 
 
 const HomeFive = () => {
-  let [active, setActive] = useState(true);
+  const [active, setActive] = useState(true);
+  const jobOfferRef = useRef(null);
+  const aboutRef = useRef(null);
   useEffect(() => {
     setTimeout(function () {
       setActive(false);
     }, 500);
   }, []);
+
+  const scrollToJobOffer = () => {
+    if (jobOfferRef.current) {
+      jobOfferRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       {/* Preloader */}
@@ -37,12 +52,12 @@ const HomeFive = () => {
       <HelmetReact title={"Home"} />
 
       {/* HeaderFive */}
-      <HeaderFive />
+      <HeaderFive onApplyClick={scrollToJobOffer} AboutClick={scrollToAbout}/>
 
       {/* HeroFive */}
       <HeroFive />
 
-      <JobOffer/>
+      <JobOffer ref={jobOfferRef}/>
 
 
       <ClientThree />
@@ -53,7 +68,7 @@ const HomeFive = () => {
  
 
       {/* AboutFive */}
-      <AboutFive />
+      <AboutFive ref={aboutRef}/>
 {/* 
       <CounterOne/> */}
 
@@ -61,25 +76,25 @@ const HomeFive = () => {
       <ProcessTwo />
 
       {/* TestimonialFour */}
-      <TestimonialFour />
+      {/* <TestimonialFour /> */}
 
       {/* PricingTwo */}
-      <PricingTwo />
+      {/* <PricingTwo /> */}
 
       {/* CTA_Three */}
-      <CTAThree />
+      {/* <CTAThree /> */}
 
       {/* TeamFour */}
-      <TeamFour />
+      {/* <TeamFour /> */}
 
       {/* FaqThree */}
-      <FaqThree />
+      {/* <FaqThree /> */}
 
       {/* BlogFive */}
-      <BlogFive />
+      {/* <BlogFive /> */}
 
       {/* MarqueeFour */}
-      <MarqueeFour />
+      {/* <MarqueeFour /> */}
 
       {/* FooterFive */}
       <FooterFive />

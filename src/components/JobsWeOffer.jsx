@@ -1,16 +1,16 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import { Link } from "react-router-dom";
 
-const JobOffer = () => {
+const JobOffer = forwardRef((props, ref) => {
   return (
-    <section className="bg-dark2">
+    <section className="bg-dark2" >
       <div className="space-top">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-8 col-md-6">
               <div className="shadow-shape-right" />
 
-              <div className="title-area text-center">
+              <div className="title-area text-center" ref={ref}>
                 <h2 className="sec-title style2 text-white">
                   Job<span className="text-theme2"> Opportunities</span> We
                   Offer{" "}
@@ -18,7 +18,7 @@ const JobOffer = () => {
               </div>
             </div>
           </div>
-          <div className="row gy-4 justify-content-center align-items-center">
+          <div className="row gy-4 justify-content-center align-items-center" >
             <div className="col-xl-6 col-md-6">
               <div
                 className="pricing-card style2"
@@ -60,7 +60,7 @@ const JobOffer = () => {
                   </div>
                   <div className="btn-wrap">
                     <Link to="/field-service-engineers" className="global-btn ">
-                      Explore More <i className="fas fa-arrow-right ms-2" />
+                      Apply Now <i className="fas fa-arrow-right ms-2" />
                     </Link>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ const JobOffer = () => {
                   </div>
                   <div className="btn-wrap">
                     <Link to="/automation-line-machine-engineers" className="global-btn ">
-                      Explore More <i className="fas fa-arrow-right ms-2" />
+                      Apply Now <i className="fas fa-arrow-right ms-2" />
                     </Link>
                   </div>
                 </div>
@@ -119,6 +119,6 @@ const JobOffer = () => {
       </div>
     </section>
   );
-};
+});
 
 export default JobOffer;

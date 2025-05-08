@@ -28,7 +28,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <RouteScrollToTop />
-        <ScrollToTop smooth color="#196164" />
+        <ScrollToTop className="flex justify-center items-center" smooth color="#196164" />
         <Routes>
           <Route exact path="/" element={<HomeFive />} />
           <Route exact path="/home-2" element={<HomeTwo />} />

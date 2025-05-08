@@ -15,12 +15,12 @@ const FooterFive = () => {
                                 <div className="widget footer-widget widget-about">
                                     <div className="about-logo">
                                         <Link to="/">
-                                            <img src="assets/img/logo-white.svg" alt="Bizmaster" />
+                                            <img src="assets/img/logo/green.png" alt="Elevate" className='w-32' />
                                         </Link>
                                     </div>
                                     <p className="footer-text mb-30 mt-30">
-                                        Many desktop ublishing packages web page editors no Lorem Ipsum a
-                                        default model text
+                                    Launch Your <span className='text-theme2'>Engineering Career</span> With 
+                                    <span className='text-theme2'> Global Opportunities!</span>
                                     </p>
                                     <div className="social-btn">
                                         <Link to="#" tabIndex={-1}>
@@ -44,17 +44,15 @@ const FooterFive = () => {
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
                                             <li>
-                                                <Link to="/service">Software Corner</Link>
+                                                <Link to="/field-service-engineers">Field Service Engineer</Link>
                                             </li>
                                             <li>
-                                                <Link to="/service">Application Center</Link>
+                                                <Link to="/automation-line-machine-engineers">Automation Line Maintenance Engineer</Link>
                                             </li>
                                             <li>
-                                                <Link to="/service">Research Section</Link>
+                                                <Link to="/contact">Contact</Link>
                                             </li>
-                                            <li>
-                                                <Link to="/service">Developing Corner</Link>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -67,7 +65,7 @@ const FooterFive = () => {
                                             <i className="fas fa-phone-alt" />
                                             <div className="contact-grid-details">
                                                 <h6>
-                                                    <Link to="#">+880 123 45 67 89</Link>
+                                                    <Link to="#">+91 90379405639</Link>
                                                     <p />
                                                 </h6>
                                             </div>
@@ -76,12 +74,12 @@ const FooterFive = () => {
                                             <i className="fas fa-envelope" />
                                             <div className="contact-grid-details">
                                                 <h6>
-                                                    <Link to="#">yourmail@gmail.com</Link>
+                                                    <Link to="#">careers@ecesistech.com</Link>
                                                     <p />
                                                 </h6>
                                             </div>
                                         </div>
-                                        <div className="widget-contact-grid">
+                                        {/* <div className="widget-contact-grid">
                                             <i className="fas fa-map-marker-alt" />
                                             <div className="contact-grid-details">
                                                 <h6>
@@ -89,7 +87,7 @@ const FooterFive = () => {
                                                     <p />
                                                 </h6>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -101,15 +99,15 @@ const FooterFive = () => {
                         <div className="row gy-3 justify-content-lg-between justify-content-center">
                             <div className="col-auto align-self-center">
                                 <p className="copyright-text text-center">
-                                    © <Link to="#">Bizmaster </Link> 2024 | All Rights Reserved
+                                    © <Link to="#">Elevate </Link> 2025 | All Rights Reserved
                                 </p>
                             </div>
                             <div className="col-auto">
                                 <div className="footer-links">
                                     <Link to="/contact">Privacy</Link>
                                     <Link to="/contact">Terms</Link>
-                                    <Link to="/contact">Sitemap</Link>
-                                    <Link to="/contact">Help</Link>
+                                    {/* <Link to="/contact">Sitemap</Link>
+                                    <Link to="/contact">Help</Link> */}
                                 </div>
                             </div>
                         </div>

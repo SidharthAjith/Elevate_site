@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
-const HeaderFive = () => {
+
+const HeaderFive = ({ onApplyClick, AboutClick }) => {
+  const navigate = useNavigate();
+
   const [active, setActive] = useState(false);
   const [search, setSearch] = useState(false);
   const [sidebar, setSidebar] = useState(false);
@@ -69,11 +72,11 @@ const HeaderFive = () => {
           >
             <i className="fas fa-times" />
           </button>
-          <div className="widget  ">
-            <div className="th-widget-about">
+          <div className="widget">
+            <div className="th-widget-about ">
               <div className="about-logo">
                 <Link to="/">
-                  <img src="assets/img/logo.svg" alt="Laun" />
+                  <img src="assets/img/logo/logo.png" alt="Laun" />
                 </Link>
               </div>
               <p className="about-text">
@@ -116,22 +119,22 @@ const HeaderFive = () => {
           <ul className="side-instagram list-wrap">
             <li>
               <Link to="#">
-                <img src="assets/img/gallery/1.jpg" alt="Bizmaster" />
+                <img src="assets/img/gallery/1.jpg" alt="Elevate" />
               </Link>
             </li>
             <li>
               <Link to="#">
-                <img src="assets/img/gallery/2.jpg" alt="Bizmaster" />
+                <img src="assets/img/gallery/2.jpg" alt="Elevate" />
               </Link>
             </li>
             <li>
               <Link to="#">
-                <img src="assets/img/gallery/3.jpg" alt="Bizmaster" />
+                <img src="assets/img/gallery/3.jpg" alt="Elevate" />
               </Link>
             </li>
             <li>
               <Link to="#">
-                <img src="assets/img/gallery/4.jpg" alt="Bizmaster" />
+                <img src="assets/img/gallery/4.jpg" alt="Elevate" />
               </Link>
             </li>
           </ul>
@@ -155,7 +158,7 @@ const HeaderFive = () => {
         <div className="mobile-menu-area">
           <div className="mobile-logo">
             <Link to="/">
-              <img src="assets/img/logo.svg" alt="Bizmaster" />
+              <img src="assets/img/logo.svg" alt="Elevate" />
             </Link>
             <button className="menu-toggle" onClick={mobileMenu}>
               <i className="fa fa-times" />
@@ -164,30 +167,13 @@ const HeaderFive = () => {
           <div className="mobile-menu">
             <ul id="offcanvas-navigation">
               <li className="">
-                <Link to="#">Home</Link>
-                <ul className="sub-menu submenu-class">
-                  <li>
-                    <Link to="/">Home 01</Link>
-                  </li>
-                  <li>
-                    <Link to="/home-2">Home 02</Link>
-                  </li>
-                  <li>
-                    <Link to="/home-3">Home 03</Link>
-                  </li>
-                  <li>
-                    <Link to="/home-4">Home 04</Link>
-                  </li>
-                  <li>
-                    <Link to="/home-5">Home 05</Link>
-                  </li>
-                </ul>
+                <Link to="/">Home</Link>
               </li>
 
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li className="menu-item-has-children">
+              {/* <li className="menu-item-has-children">
                 <Link to="#">Pages</Link>
                 <ul className="sub-menu">
                   <li>
@@ -200,8 +186,19 @@ const HeaderFive = () => {
                     <Link to="/team-details">Team Details</Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li className="menu-item-has-children">
+                      <Link to="#">Carrers</Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link to="/field-service-engineers">Field Service Engineer</Link>
+                        </li>
+                        <li>
+                          <Link to="/automation-line-machine-engineers">Automation Line Maintenance Engineer</Link>
+                        </li>
+                      </ul>
+                    </li>
+              {/* <li className="menu-item-has-children">
                 <Link to="#">Project</Link>
                 <ul className="sub-menu">
                   <li>
@@ -211,8 +208,8 @@ const HeaderFive = () => {
                     <Link to="/project-details">Project Details</Link>
                   </li>
                 </ul>
-              </li>
-              <li className="menu-item-has-children">
+              </li> */}
+              {/* <li className="menu-item-has-children">
                 <Link to="#">Service</Link>
                 <ul className="sub-menu">
                   <li>
@@ -222,8 +219,8 @@ const HeaderFive = () => {
                     <Link to="/service-details">Service Details</Link>
                   </li>
                 </ul>
-              </li>
-              <li className="menu-item-has-children">
+              </li> */}
+              {/* <li className="menu-item-has-children">
                 <Link to="#">Blog</Link>
                 <ul className="sub-menu">
                   <li>
@@ -233,7 +230,7 @@ const HeaderFive = () => {
                     <Link to="/blog-details">Blog Details</Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
@@ -278,12 +275,12 @@ const HeaderFive = () => {
         </div> */}
         <div className={`sticky-wrapper ${scroll && "sticky"}`}>
           {/* Main Menu Area */}
-          <div className="container">
+          <div className="container !max-w-[1400px]">
             <div className="row align-items-center justify-content-between">
               <div className="col-auto">
                 <div className="header-logo">
                   <Link to="/">
-                    <img src="assets/img/logo-white.svg" alt="logo" />
+                    <img src="assets/img/logo/green.png" alt="logo" className="w-32 mx-[60px]" />
                   </Link>
                 </div>
               </div>
@@ -291,7 +288,7 @@ const HeaderFive = () => {
                 <nav className="main-menu d-none d-lg-inline-block">
                   <ul>
                     <li className="">
-                      <Link to="#">Home</Link>
+                      <Link to="/">Home</Link>
                       {/* <ul className="sub-menu">
                         <li>
                           <Link to="/">Home 01</Link>
@@ -311,10 +308,21 @@ const HeaderFive = () => {
                       </ul> */}
                     </li>
 
-                    <li>
-                      <Link to="/about">About Us</Link>
+                    <li onClick={AboutClick}>
+                      <Link to="#">About Us</Link>
                     </li>
                     <li className="menu-item-has-children">
+                      <Link to="#">Carrers</Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link to="/field-service-engineers">Field Service Engineer</Link>
+                        </li>
+                        <li>
+                          <Link to="/automation-line-machine-engineers">Automation Line Maintenance Engineer</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* <li className="menu-item-has-children">
                       <Link to="#">Services</Link>
                       <ul className="sub-menu">
                         <li>
@@ -324,8 +332,8 @@ const HeaderFive = () => {
                           <Link to="/service-details">Service Details</Link>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link to="#">Projects</Link>
                       <ul className="sub-menu">
                         <li>
@@ -335,8 +343,8 @@ const HeaderFive = () => {
                           <Link to="/project-details">Projects Details</Link>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link to="#">Blog</Link>
                       <ul className="sub-menu">
                         <li>
@@ -346,8 +354,8 @@ const HeaderFive = () => {
                           <Link to="/blog-details">Blog Details</Link>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link to="#">Pages</Link>
                       <ul className="sub-menu">
                         <li>
@@ -363,7 +371,7 @@ const HeaderFive = () => {
                           <Link to="/contact">Contact Page</Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/contact">Contact</Link>
                     </li>
@@ -378,12 +386,13 @@ const HeaderFive = () => {
               <div className="col-auto ms-xxl-4 d-xl-block d-none">
                 <div className="header-wrapper">
                   <div className="header-button">
-                    <button type="button" className="simple-icon searchBoxToggler" onClick={() => searchControl(true)}>
+                    {/* <button type="button" className="simple-icon searchBoxToggler" onClick={() => searchControl(true)}>
                       <i className="fas fa-search" />
-                    </button>
-                    <Link to="/about" className="global-btn style-border3">
-                      Get a quote <i className="fas fa-arrow-right ms-2" />
-                    </Link>
+                    </button> */}
+                    <div className="global-btn style-border3" onClick={onApplyClick}>
+                      Apply Now <i className="fas fa-arrow-right ms-2" />
+                    </div>
+
                   </div>
                 </div>
               </div>

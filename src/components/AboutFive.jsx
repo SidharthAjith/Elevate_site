@@ -1,11 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
-const AboutFive = () => {
+const AboutFive = forwardRef((props,ref) => {
   return (
-    <section className="bg-dark2 ">
-      <div className="about-area-5 space-bottom">
+    <section className="bg-dark2 scroll-mt-20" ref={ref}>
+      <div className="about-area-5 space-bottom" >
         <div className="shadow-shape-left " />
         <div className="container">
           <div className="row gy-40 gx-60 align-items-center justify-content-between pt-16">
@@ -73,6 +73,6 @@ const AboutFive = () => {
       </div>
     </section>
   );
-};
+});
 
 export default AboutFive;

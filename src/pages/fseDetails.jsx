@@ -21,7 +21,7 @@ const FSEDetails = () => {
       {active === true && <Preloader />}
 
       {/* Helmet */}
-      <HelmetReact title={"Contact"} />
+      <HelmetReact title={"FSE"} />
 
       {/* HeaderFive */}
       <HeaderFive />

@@ -6,6 +6,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import FooterFive from "../components/FooterFive";
 import Newsletter from "../components/Newsletter";
 import ContactInner from "../components/ContactInner";
+import ALMEContact from "../components/ALMEContact";
 
 
 
@@ -29,8 +30,7 @@ const ALMEDetails = () => {
 
  
 
-      {/* ContactInner */}
-      <ContactInner />
+    <ALMEContact/>
 
       {/* Newsletter */}
       <Newsletter />
