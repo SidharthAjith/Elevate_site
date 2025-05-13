@@ -13,8 +13,8 @@ const HeroFive = () => {
                         <div className="col-lg-10">
                             <div className="hero-style5 !pt-[150px] text-center">
                                 <h1 className="hero-title text-white">
-                                <span className='text-[60px]'> Your Gateway to</span><br/>
-                                    <span className="text-theme2"> Engineering Success!</span><br/> <span className='text-[60px]'>Join Top Companies</span>
+                                <span className='md:text-[60px] text-[40px]'> Your Gateway to</span><br/>
+                                    <span className="text-theme2 sm:max-md:text-[40px] "> Engineering Success!</span><br/> <span className='md:text-[60px] text-[40px]'>Join Top Companies</span>
                                 </h1>
                                 <p className="hero-text text-white">
                                 We connect skilled professionals and freshers with top engineering companies, offering exclusive jobs, career growth, and hands-on training in<span className='font-bold'> manufacturing, assembly lines, and maintenance engineering.</span> 

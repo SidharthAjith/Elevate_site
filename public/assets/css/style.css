@@ -109,6 +109,7 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  
 }
 
 body {
@@ -16400,3 +16401,7 @@ li.trackback {
   filter: blur(200px);
   right: 50%;
 }
+
+
+
+

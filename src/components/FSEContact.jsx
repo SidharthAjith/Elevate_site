@@ -14,17 +14,105 @@ const FSEContact = () => {
         }}
       >
         <div className="portfolio-deatils-area !pb-0 mt-16 space">
-          <div className="container">
+          <div className="container ">
             <div className="row gx-30">
-              <div className="col-xxl-8 col-lg-7 items-center flex">
-                <div className="page-thumb mb-40">
+              <div className="col-xxl-8 col-lg-7 items-center flex ">
+                <div className="page-thumb md:mb-40 mb-10 mt-20 ">
                   <img
                     src="assets/img/jobs/Field Service Engineer.jpg"
                     alt="img"
+                    className="!min-h-0"
                   />
                 </div>
               </div>
               <div className="col-12 order-lg-3">
+              <div className="md:hidden block col-xxl-4 col-lg-5 order-lg-2">
+                <aside className="sidebar-area ">
+                  <div className="widget widget_project-info !p-[25px]">
+                    <h3 className="text-lg text-theme font-semibold mb-3">
+                      Field Service Engineer
+                    </h3>
+                    <p className="text-sm text-black mb-4 leading-relaxed">
+                      Are you a Graduate or Diploma holder in Electronics,
+                      Mechatronics, or Instrumentation with hands-on experience
+                      in maintaining and installing assembly line equipment?
+                      Join us as a Field Service Engineer and work with top
+                      multinational factories where precision and efficiency
+                      matter.
+                    </p>
+                    <ul className="">
+                      <li className="!m-0 flex items-center jus">
+                        <img
+                          src="assets/img/icon/job_type.png"
+                          alt="Job Type"
+                          className="w-6 mr-2"
+                        />
+                        <span className="font-medium !text-black !text-[14px] w-fit">
+                          Job Type:
+                        </span>
+                        <span className="!text-black !text-[14px]">
+                          Full-Time
+                        </span>
+                      </li>
+                      <li className="!m-0 flex items-center">
+                        <img
+                          src="assets/img/icon/location.png"
+                          alt="Job Type"
+                          className="w-6 mr-2"
+                        />
+
+                        <span className="font-medium !text-black !text-[14px]">
+                          Location:
+                        </span>
+                        <span className="!text-black !text-[14px]">
+                          Chennai & Bangalore
+                        </span>
+                      </li>
+                      <li className="!m-0 flex items-center">
+                        <img
+                          src="assets/img/icon/opening.png"
+                          alt="Job Type"
+                          className="w-6 mr-1"
+                        />
+                        <span className="font-medium !text-black !text-[14px]">
+                          Openings:
+                        </span>
+                        <span className="!text-black !text-[14px]">
+                          200+ Positions
+                        </span>
+                      </li>
+                      <li className="flex !m-0 items-center">
+                        <img
+                          src="assets/img/icon/salary.png"
+                          alt="Job Type"
+                          className="w-6 mr-2"
+                        />
+
+                        <span className="font-medium !text-black !text-[14px]">
+                          Salary:
+                        </span>
+                        <span className="!text-black !text-[14px]">
+                          As per industry standards + Benefits including food
+                          and accommodation.
+                        </span>
+                      </li>
+                    </ul>
+                    <div className="flex justify-center mt-6">
+                    <div className="btn-wrap global-btn !bg-[#C4F500] !text-[#19352D] hover:!text-white"  onClick={() => {
+                        const section = document.getElementById("apply-now");
+                        if (section)
+                          section.scrollIntoView({ behavior: "smooth" });
+                      }}>
+
+                        Apply Now <i className="fas fa-arrow-right ms-2" />
+
+                    </div>
+                  </div>
+                  </div>
+
+                  
+                </aside>
+              </div>
                 <h2 className="text-white">
                   Join Global Leaders Of{" "}
                   <span className="text-theme2">Mobile Manufacturing</span>
@@ -252,7 +340,7 @@ const FSEContact = () => {
 
                
               </div>
-              <div className="col-xxl-4 col-lg-5 order-lg-2">
+              <div className="hidden md:block col-xxl-4 col-lg-5 order-lg-2">
                 <aside className="sidebar-area ">
                   <div className="widget widget_project-info !p-[25px]">
                     <h3 className="text-lg text-theme font-semibold mb-3">
@@ -390,7 +478,7 @@ const FSEContact = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-8 bg-white rounded-xl">
+              <div className="col-xl-6 col-lg-8 bg-white rounded-xl w-[95%] mx-auto mt-5">
                 <FSEHubspotForm />
               </div>
             </div>

@@ -32,8 +32,6 @@ const ALMEDetails = () => {
 
     <ALMEContact/>
 
-      {/* Newsletter */}
-      <Newsletter />
 
       {/* FooterOne */}
       <FooterFive />

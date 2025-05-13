@@ -67,7 +67,7 @@ const ContactInner = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-8 bg-white rounded-xl">
+              <div className="col-xl-6 col-lg-8 bg-white rounded-xl w-[95%] mx-auto mt-5">
                 {/* FORMS*/}
                 <ContactHubSpot/>
               </div>

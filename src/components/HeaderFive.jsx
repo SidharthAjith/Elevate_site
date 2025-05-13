@@ -76,7 +76,7 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
             <div className="th-widget-about ">
               <div className="about-logo">
                 <Link to="/">
-                  <img src="assets/img/logo/logo.png" alt="Laun" />
+                  <img src="assets/img/logo/green.png" alt="Laun" />
                 </Link>
               </div>
               <p className="about-text">
@@ -154,11 +154,11 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
 
       {/* Mobile Menu */}
 
-      <div className={`mobile-menu-wrapper ${active ? "body-visible" : ""}`}>
-        <div className="mobile-menu-area">
-          <div className="mobile-logo">
+      <div className={`mobile-menu-wrapper  ${active ? "body-visible" : ""}`}>
+        <div className="mobile-menu-area bg-dark2">
+          <div className="mobile-logo bg-dark2">
             <Link to="/">
-              <img src="assets/img/logo.svg" alt="Elevate" />
+              <img src="assets/img/logo/green.png" alt="Elevate" className="w-20" />
             </Link>
             <button className="menu-toggle" onClick={mobileMenu}>
               <i className="fa fa-times" />
@@ -166,12 +166,12 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
           </div>
           <div className="mobile-menu">
             <ul id="offcanvas-navigation">
-              <li className="">
-                <Link to="/">Home</Link>
+              <li >
+                <Link to="/" className="text-white">Home</Link>
               </li>
 
-              <li>
-                <Link to="/about">About</Link>
+              <li onClick={AboutClick}>
+                <Link to="#" className="text-white">About</Link>
               </li>
               {/* <li className="menu-item-has-children">
                 <Link to="#">Pages</Link>
@@ -188,13 +188,13 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                 </ul>
               </li> */}
               <li className="menu-item-has-children">
-                      <Link to="#">Carrers</Link>
+                      <Link to="#" className="text-white">Carrers</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link to="/field-service-engineers">Field Service Engineer</Link>
+                          <Link to="/field-service-engineers" className="text-white">Field Service Engineer</Link>
                         </li>
                         <li>
-                          <Link to="/automation-line-machine-engineers">Automation Line Maintenance Engineer</Link>
+                          <Link to="/automation-line-machine-engineers" className="text-white">Automation Line Maintenance Engineer</Link>
                         </li>
                       </ul>
                     </li>
@@ -232,7 +232,7 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                 </ul>
               </li> */}
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" className="text-white">Contact</Link>
               </li>
             </ul>
           </div>
@@ -280,15 +280,15 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
               <div className="col-auto">
                 <div className="header-logo">
                   <Link to="/">
-                    <img src="assets/img/logo/green.png" alt="logo" className="w-32 mx-[60px]" />
+                    <img src="assets/img/logo/green.png" alt="logo" className="md:w-32 w-24 md:mx-[60px] mx-[10px]" />
                   </Link>
                 </div>
               </div>
               <div className="col-auto">
-                <nav className="main-menu d-none d-lg-inline-block">
-                  <ul>
+                <nav className="main-menu d-none d-lg-inline-block mt-2 ">
+                  <ul className="">
                     <li className="">
-                      <Link to="/">Home</Link>
+                      <Link to="/" className="!text-[21px] !font-montserrat mx-1" >Home</Link>
                       {/* <ul className="sub-menu">
                         <li>
                           <Link to="/">Home 01</Link>
@@ -309,16 +309,16 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                     </li>
 
                     <li onClick={AboutClick}>
-                      <Link to="#">About Us</Link>
+                      <Link to="#" className="!text-[21px] !font-montserrat mx-1">About Us</Link>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link to="#">Carrers</Link>
+                      <Link to="#" className="!text-[21px] !font-montserrat mx-1">Carrers</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link to="/field-service-engineers">Field Service Engineer</Link>
+                          <Link to="/field-service-engineers" className="!font-montserrat">Field Service Engineer</Link>
                         </li>
                         <li>
-                          <Link to="/automation-line-machine-engineers">Automation Line Maintenance Engineer</Link>
+                          <Link to="/automation-line-machine-engineers" className="!font-montserrat">Automation Line Maintenance Engineer</Link>
                         </li>
                       </ul>
                     </li>
@@ -373,7 +373,7 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                       </ul>
                     </li> */}
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact" className="!text-[21px] !font-montserrat mx-1">Contact</Link>
                     </li>
                   </ul>
                 </nav>
