@@ -203,7 +203,7 @@ const WhyJoin = () => {
 
 const Card = ({ img, text }) => (
   <div
-    className="wcu-card !bg-transparent w-full h-[50vw] md:w-[20%] border-1 rounded-xl px-4 py-5 text-center relative"
+    className="wcu-card !bg-transparent w-full h-[55vw] md:w-[20%] border-1 rounded-xl px-4 py-5 text-center relative"
     style={{ borderColor: "#C4F500" }}
   >
     <div
