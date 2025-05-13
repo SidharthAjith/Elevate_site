@@ -203,9 +203,10 @@ const WhyJoin = () => {
 
 const Card = ({ img, text }) => (
   <div
-    className="wcu-card !bg-transparent w-full h-[55vw] md:w-[20%] border-1 rounded-xl px-4 py-5 text-center relative"
+    className="wcu-card !bg-transparent w-full h-[50vw] md:w-[20%] border-1 rounded-xl !px-3 pt-5 text-center relative"
     style={{ borderColor: "#C4F500" }}
   >
+    {/* Icon position */}
     <div
       className="icon flex justify-center align-center mb-3 top-1 left-5"
       style={{ position: "absolute" }}
@@ -217,10 +218,17 @@ const Card = ({ img, text }) => (
         className="mt-2"
       />
     </div>
-    <div className="wcu-card-details absolute mt-[45px] left-0  mx-3">
-      <h4 className="wcu-card-title text-white text-base md:text-lg">{text}</h4>
+
+    {/* Centered Text */}
+    <div
+      className="wcu-card-details absolute mt-[45px] text-center w-[90%]"
+    >
+      <h4 className="wcu-card-title text-white text-base md:text-lg">
+        {text}
+      </h4>
     </div>
   </div>
 );
+
 
 export default WhyJoin;
