@@ -8,7 +8,7 @@ const WhyJoin = () => {
   const NextArrow = (props) => {
     const { onClick } = props;
     return (
-      <div className="absolute right-[-20px] top-[40%] h-8 w-8 " onClick={onClick}>
+      <div className="absolute right-[40%] bottom-[-40px] h-8 w-8 " onClick={onClick}>
         <img src="/assets/img/icon/arrow-right.png" alt="TEST" className="" />
       </div>
     );
@@ -17,7 +17,7 @@ const WhyJoin = () => {
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
-      <div className=" h-8 w-8 left-[-20px] absolute top-[40%]" onClick={onClick}>
+      <div className=" h-8 w-8 left-[40%] bottom-[-40px] absolute" onClick={onClick}>
         <img src="/assets/img/icon/arrow-left.png" alt="" />
       </div>
     );

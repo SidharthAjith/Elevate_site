@@ -21,7 +21,7 @@ const JobOffer = forwardRef((props, ref) => {
           <div className="row gy-4 justify-content-center align-items-center" >
             <div className="col-xl-6 col-md-6">
               <div
-                className="pricing-card style2  md:h-[100vh] h-fit w-full m-auto "
+                className="pricing-card style2  md:h-[600px] h-fit w-full md:w-[650px] "
                 style={{ borderColor: "#C4F500" }}
               >
                 <h4 className="text-[26px] text-white">
@@ -68,7 +68,7 @@ const JobOffer = forwardRef((props, ref) => {
             </div>
             <div className="col-xl-6 col-md-6">
               <div
-                className="pricing-card style2 md:h-[100vh] h-fit w-full m-auto mb-5 md:mb-0 "
+                className="pricing-card style2 md:h-[600px] h-fit w-full md:w-[650px] "
                 style={{ borderColor: "#C4F500" }}
               >
                 <h4 className="text-[26px] text-white">
