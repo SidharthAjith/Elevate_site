@@ -11,14 +11,6 @@ const IndexPage = () => {
   }, []);
   const cssCode = `
   
-  /*
-Theme Name: Bizmaster
-Theme URI: https://wowtheme7.com/bizmaster
-Author: wowtheme7
-Author URI: https://wowtheme7.com 
-Description: Bizmaster - Business Consulting React Js Template
-Version: 2.0.1
-*/
 
 :root {
   --main-color: rgb(25, 97, 100);
@@ -1159,12 +1151,10 @@ h1,h2,h3,h4,h5,h6 {
                 alt="logo"
               />
               <h1 className="mt-4">
-                Bizmaster - Business Consulting React Js Template
+              Elevate | Engineering Manpower Staffing & Services
               </h1>
               <p className="me-5 mb-5">
-                Bizmaster is Business Consulting React Js Template built for an array
-                of services with a number of auto service and car repair
-                institutions in mind.
+              Find skilled engineering talent with Elevate. Explore our staffing services and apply for top field service and technical roles across major industries.
               </p>
               <div className="btn-area">
                 <a className="btn btn-border page-scroll" href="#demo">

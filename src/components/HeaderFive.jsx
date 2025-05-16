@@ -170,8 +170,8 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                 <Link to="/" className="text-white">Home</Link>
               </li>
 
-              <li onClick={AboutClick}>
-                <Link to="#" className="text-white">About</Link>
+              <li>
+                <Link to="/" className="text-white"  onClick={AboutClick}>About</Link>
               </li>
               {/* <li className="menu-item-has-children">
                 <Link to="#">Pages</Link>
@@ -308,8 +308,8 @@ const HeaderFive = ({ onApplyClick, AboutClick }) => {
                       </ul> */}
                     </li>
 
-                    <li onClick={AboutClick}>
-                      <Link to="#" className="!text-[21px] !font-montserrat mx-1">About Us</Link>
+                    <li >
+                      <Link to="/" className="!text-[21px] !font-montserrat mx-1" onClick={AboutClick}>About Us</Link>
                     </li>
                     <li className="menu-item-has-children">
                       <Link to="#" className="!text-[21px] !font-montserrat mx-1">Carrers</Link>

@@ -4,11 +4,11 @@ const HelmetReact = ({ title }) => {
   return (
     <Helmet>
       <title>
-        {title} || Bizmaster - Business Consulting React Js Template
+        {title} || Elevate | Engineering Manpower Staffing & Services
       </title>
       <meta
         name="description"
-        content="Bizmaster - Business Consulting React Js Template"
+        content="Find skilled engineering talent with Elevate. Explore our staffing services and apply for top field service and technical roles across major industries."
       />
     </Helmet>
   );

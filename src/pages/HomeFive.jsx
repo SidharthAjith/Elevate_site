@@ -43,6 +43,10 @@ const HomeFive = () => {
       aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    scrollToAbout();
+  }, []);
   return (
     <>
       {/* Preloader */}
